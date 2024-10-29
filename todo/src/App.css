@@ -1,0 +1,120 @@
+/* App.css */
+
+/* General body styling */
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  background-color: #f5f5f5;
+}
+
+/* Todo App container styling */
+.todo {
+  width: 400px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  background-color: #ffffff;
+  text-align: center;
+}
+
+/* Input field and button container */
+.App {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+/* Input field styling */
+input[type="text"] {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  transition: border-color 0.3s;
+}
+
+input[type="text"]:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Enter button styling */
+button {
+  padding: 10px 16px;
+  font-size: 16px;
+  color: #ffffff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Task list styling */
+.tasks {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Task item styling */
+.tasks li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  margin-bottom: 8px;
+  background-color: #f9f9f9;
+  border-radius: 4px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.tasks li span {
+  font-size: 16px;
+}
+
+/* Date styling */
+.tasks li span:nth-child(2) {
+  color: #888;
+  font-size: 12px;
+}
+
+/* Done/Pending button styling */
+.tasks li button {
+  padding: 6px 12px;
+  font-size: 14px;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.tasks li button:hover {
+  background-color: #0056b3;
+}
+
+.tasks li button:active {
+  transform: scale(0.98);
+}
+
+/* Completed task styling */
+.tasks li span:first-child {
+  text-decoration: none;
+  color: #333;
+  transition: color 0.3s;
+}
+
+.tasks li.completed span:first-child {
+  color: #888;
+  text-decoration: line-through;
+}
